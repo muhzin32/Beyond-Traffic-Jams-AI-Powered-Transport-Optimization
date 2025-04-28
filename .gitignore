@@ -39,7 +39,7 @@ models/*
 *.h5
 *.pt
 !models/
-models/*.pyc
+models/*.h5
 
 # OS specific
 .DS_Store
