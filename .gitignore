@@ -38,6 +38,8 @@ models/*
 !models/.gitkeep
 *.h5
 *.pt
+!models/
+models/*.pyc
 
 # OS specific
 .DS_Store
