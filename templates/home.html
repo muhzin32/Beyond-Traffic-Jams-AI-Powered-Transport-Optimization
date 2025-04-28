@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚦 Traffic Analysis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-box">
+            <h1>🚦 Traffic Analysis System</h1>
+            <p>Upload a video to analyze vehicle movement in real-time.</p>
+            <button id="upload-toggle" class="upload-btn">📤 Upload & Analyze</button>
+            <form id="upload-form" class="upload-form hidden" method="POST" action="/upload" enctype="multipart/form-data">
+                <label for="file" class="upload-label">
+                    <span>Choose a video file (MP4, AVI, MOV)</span>
+                    <input type="file" id="file" name="file" accept="video/*" required>
+                </label>
+                <button type="submit" class="upload-btn">Analyze Video</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
